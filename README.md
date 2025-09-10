@@ -1,12 +1,30 @@
-# React + Vite
+# 🎬 Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple front-end movie web application built with **React** and **Vite**.  
+It uses the **TMDB (The Movie Database) API** to search for movies and allows users to add their favorite titles to a dedicated **Favorites** page.
 
-Currently, two official plugins are available:
+## Features
+- Search for movies by title
+- View search results with movie posters and details
+- Add or remove movies from your favorites
+- Favorites are saved locally (via `localStorage`)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to Run
+1. Clone the repository and install dependencies:
+   ```bash
+   npm install
+   ```
+2. Create a `.env` file with your TMDB API key:
+   ```
+   VITE_TMDB_API_KEY=your_api_key_here
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open the app in your browser at the URL provided by Vite (usually `http://localhost:5173`).
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+- React + Vite
+- TMDB API
+- LocalStorage for favorites
